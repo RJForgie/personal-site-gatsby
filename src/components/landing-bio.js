@@ -47,14 +47,10 @@ const LandingBio = () => (
 
     render={data => (
       <OuterContainer>
-        {console.log('data.allMarkdownRemark.edges :>> ', data)}
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
           <CodeIcon src={code} alt="Laptop icon"/>
-          <Description>
-            
-          </Description>
         </Container>
       </OuterContainer>
     )}
