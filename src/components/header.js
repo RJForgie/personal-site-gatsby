@@ -78,8 +78,9 @@ const Header = ({ siteTitle }) => (
     <Content>
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
-        <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/about">About</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/bookshelf">Bookshelf</NavLink>
         <GitHubLink href="https://github.com/RJForgie">
           GitHub
         </GitHubLink>
