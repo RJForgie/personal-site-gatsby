@@ -1,45 +1,10 @@
 ---
-title: "This is such a long headline and i dont know what to write so i keep continiung"
-date: "2019-03-17"
+title: "Placeholder"
+date: "2020-07-14"
 draft: false
-path: "/blog/example-title"
+path: "/blog/placeholder-post"
 ---
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-Paragraph
-
----
-
-> This is a quote
-
----
-
-[Example.com](example.com)
-
----
-
-`const foo = bar`
-
-```javascript
-const foo = bar
-console.log(foo);
-```
-
----
-
-| Hello | World |
-|-------|------ |
-| Foo   | Bar   |
+When I write something it'll be here.
 
 
 
