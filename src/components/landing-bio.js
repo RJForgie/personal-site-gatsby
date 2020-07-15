@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import Typewriter from 'typewriter-effect';
 import code from '../images/code.svg'
 
 const Container = styled.div`
@@ -32,7 +33,15 @@ const CodeIcon = styled.img`
   width: 4rem;
 `
 
-const LandingBio = () => (
+const LandingBio = () => {
+
+  const typewriterOptions = {
+    strings: ['JavaScript', 'TypeScript', 'React', 'Ruby', 'Rails'],
+    autoStart: true,
+    loop: true,
+  }
+
+  return (
   <StaticQuery
     query={graphql`
       query LandingSiteTitleQuery {
@@ -50,12 +59,14 @@ const LandingBio = () => (
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>{data.site.siteMetadata.subtitle}</Description>
+          <p> I solve problems with <Typewriter options={typewriterOptions}/>
+          </p>
           <CodeIcon src={code} alt="Laptop icon"/>
         </Container>
       </OuterContainer>
     )}
   />
-)
+)}
 
 NameHeader.propTypes = {
   siteTitle: PropTypes.string,
