@@ -8,6 +8,7 @@ const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
+  height: 78vh;
 `
 
 const Subheading = styled.h3`
@@ -21,7 +22,7 @@ const AboutPage = () => (
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <Content>
         <h1>Bookshelf</h1>
-        <p>Books i've recommended to friends or have gifted a copy of.</p>
+        <p>Books i've liked enough to recommend to friends or colleagues.</p>
         <Subheading>Non Fiction</Subheading>
         <ul>
           <li>Bad Blood - <em>John Carreyrou</em></li>
