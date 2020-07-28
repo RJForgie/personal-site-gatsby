@@ -65,6 +65,11 @@ const HomeLink = styled(NavLink)`
   margin-left: 0;
 `
 
+const NavWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
 const SiteHeader = styled.header`
   background: transparent;
   display: flex;
@@ -76,15 +81,15 @@ const SiteHeader = styled.header`
 const Header = ({ siteTitle }) => (
   <SiteHeader>
     <Content>
-      <p>
-        <HomeLink to="/">{siteTitle}</HomeLink>
+      <NavWrapper>
+        <HomeLink to="/">Home</HomeLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/bookshelf">Bookshelf</NavLink>
         <GitHubLink href="https://github.com/RJForgie">
           GitHub
         </GitHubLink>
-      </p>
+      </NavWrapper>
     </Content>
   </SiteHeader>
 )

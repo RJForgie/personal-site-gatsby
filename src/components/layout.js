@@ -33,6 +33,7 @@ const FooterText = styled.a`
 const Footer = styled.footer`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `
 
 const Layout = ({ children }) => (
@@ -52,9 +53,9 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            <p>
+            <span>
             © {new Date().getFullYear()}, Built with
-            </p>
+            </span>
             <FooterLink href="https://www.gatsbyjs.org">Gatsby</FooterLink>
             <FooterText>
               and using
